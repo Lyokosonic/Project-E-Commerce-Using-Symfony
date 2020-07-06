@@ -1,4 +1,4 @@
-# Project E-Commerce Using Symfony
+# Project E-Commerce Using Symfony (Uncomplete)
 
 Le but est de créer une plateforme générique de site marchand discount «high-tech», avec le maximum
 de fonctionnalités.<br/>
