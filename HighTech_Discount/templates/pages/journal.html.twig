@@ -1,0 +1,680 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<body id="news" class="template-blog">
+
+  <div id="shopify-section-header" class="shopify-section"><style>
+  .logo__image-wrapper {
+    max-width: 50px;
+  }
+  /*================= If logo is above navigation ================== */
+  
+    .site-nav {
+      
+      margin-top: 30px;
+    }
+
+    
+      .logo__image-wrapper {
+        margin: 0 auto;
+      }
+    
+  
+
+  /*============ If logo is on the same line as navigation ============ */
+  
+
+
+  
+</style>
+
+<div data-section-id="header" data-section-type="header-section">
+  <div class="header-bar">
+    <div class="wrapper medium-down--hide">
+      <div class="post-large--display-table">
+
+        
+          <div class="header-bar__left post-large--display-table-cell">
+
+            
+
+            
+
+            
+              <div class="header-bar__module header-bar__search">
+                
+
+
+  <form action="/search" method="get" class="header-bar__search-form clearfix" role="search">
+    
+    <button type="submit" class="btn btn--search icon-fallback-text header-bar__search-submit">
+      <span class="icon icon-search" aria-hidden="true"></span>
+      <span class="fallback-text">Search</span>
+    </button>
+    <input type="search" name="q" value="" aria-label="Search" class="header-bar__search-input" placeholder="Search">
+  </form>
+
+
+              </div>
+            
+
+          </div>
+        
+
+        <div class="header-bar__right post-large--display-table-cell">
+
+          
+
+          <div class="header-bar__module">
+            <span class="header-bar__sep" aria-hidden="true"></span>
+            <a href="/cart" class="cart-page-link">
+              <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="header-bar__module">
+            <a href="/cart" class="cart-page-link">
+              Cart
+              <span class="cart-count header-bar__cart-count hidden-count">0</span>
+            </a>
+          </div>
+
+          
+            
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper post-large--hide announcement-bar--mobile">
+      
+    </div>
+
+    <div class="wrapper post-large--hide">
+      
+        <button type="button" class="mobile-nav-trigger" id="MobileNavTrigger" aria-controls="MobileNav" aria-expanded="false">
+          <span class="icon icon-hamburger" aria-hidden="true"></span>
+          Menu
+        </button>
+      
+      <a href="/cart" class="cart-page-link mobile-cart-page-link">
+        <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
+        Cart <span class="cart-count hidden-count">0</span>
+      </a>
+    </div>
+    <nav role="navigation">
+  <ul id="MobileNav" class="mobile-nav post-large--hide">
+    
+      
+        <li class="mobile-nav__link">
+          <a href="/" class="mobile-nav">
+            Home
+          </a>
+        </li>
+      
+    
+      
+        
+        <li class="mobile-nav__link" aria-haspopup="true">
+          <a href="/collections/all" class="mobile-nav__sublist-trigger" aria-controls="MobileNav-Parent-2" aria-expanded="false">
+            Shop
+            <span class="icon-fallback-text mobile-nav__sublist-expand" aria-hidden="true">
+  <span class="icon icon-plus" aria-hidden="true"></span>
+  <span class="fallback-text">+</span>
+</span>
+<span class="icon-fallback-text mobile-nav__sublist-contract" aria-hidden="true">
+  <span class="icon icon-minus" aria-hidden="true"></span>
+  <span class="fallback-text">-</span>
+</span>
+
+          </a>
+          <ul id="MobileNav-Parent-2" class="mobile-nav__sublist">
+            
+              <li class="mobile-nav__sublist-link ">
+                <a href="/collections/all" class="site-nav__link">All <span class="visually-hidden">Shop</span></a>
+              </li>
+            
+            
+              
+                <li class="mobile-nav__sublist-link">
+                  <a href="/collections/all">
+                    All products
+                  </a>
+                </li>
+              
+            
+              
+                <li class="mobile-nav__sublist-link">
+                  <a href="/collections/accessories">
+                    Accessories
+                  </a>
+                </li>
+              
+            
+              
+                <li class="mobile-nav__sublist-link">
+                  <a href="/collections/pots-planters">
+                    Pots &amp; planters
+                  </a>
+                </li>
+              
+            
+              
+                
+                <li class="mobile-nav__sublist-link">
+                  <a href="/collections/lighting" class="mobile-nav__sublist-trigger" aria-controls="MobileNav-Child-2-4" aria-expanded="false">
+                    Lighting
+                    <span class="icon-fallback-text mobile-nav__sublist-expand" aria-hidden="true">
+  <span class="icon icon-plus" aria-hidden="true"></span>
+  <span class="fallback-text">+</span>
+</span>
+<span class="icon-fallback-text mobile-nav__sublist-contract" aria-hidden="true">
+  <span class="icon icon-minus" aria-hidden="true"></span>
+  <span class="fallback-text">-</span>
+</span>
+
+                  </a>
+                  <ul id="MobileNav-Child-2-4" class="mobile-nav__sublist mobile-nav__sublist--grandchilds">
+                    
+                      <li class="mobile-nav__sublist-link">
+                        <a href="/collections/light-bulbs">
+                          Light bulbs
+                        </a>
+                      </li>
+                    
+                      <li class="mobile-nav__sublist-link">
+                        <a href="/collections/lighting">
+                          Lamps
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+              
+                <li class="mobile-nav__sublist-link">
+                  <a href="/collections/pillows">
+                    Pillows
+                  </a>
+                </li>
+              
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li class="mobile-nav__link">
+          <a href="/blogs/news" class="mobile-nav" aria-current="page">
+            Journal
+          </a>
+        </li>
+      
+    
+
+    
+
+    <li class="mobile-nav__link">
+      
+        <div class="header-bar__module header-bar__search">
+          
+
+
+  <form action="/search" method="get" class="header-bar__search-form clearfix" role="search">
+    
+    <button type="submit" class="btn btn--search icon-fallback-text header-bar__search-submit">
+      <span class="icon icon-search" aria-hidden="true"></span>
+      <span class="fallback-text">Search</span>
+    </button>
+    <input type="search" name="q" value="" aria-label="Search" class="header-bar__search-input" placeholder="Search">
+  </form>
+
+
+        </div>
+      
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+
+      
+        <div class="grid--full">
+          <div class="grid__item">
+            
+              <div class="h1 site-header__logo" itemscope="" itemtype="http://schema.org/Organization">
+            
+              
+                <noscript>
+                  
+                  <div class="logo__image-wrapper">
+                    <img src="//cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_50x.png?v=1516979161" alt="minimal-modern" />
+                  </div>
+                </noscript>
+                <div class="logo__image-wrapper supports-js">
+                  <a href="/" itemprop="url" style="padding-top:100.0%;">
+                    
+                    <img class="logo__image lazyautosizes lazyloaded" src="//cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_300x300.png?v=1516979161" data-widths="[120, 180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]" data-aspectratio="1.0" data-sizes="auto" alt="minimal-modern" itemprop="logo" data-srcset="//cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_120x.png?v=1516979161 120w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_180x.png?v=1516979161 180w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_360x.png?v=1516979161 360w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_540x.png?v=1516979161 540w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_720x.png?v=1516979161 720w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_900x.png?v=1516979161 900w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1080x.png?v=1516979161 1080w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1296x.png?v=1516979161 1296w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1512x.png?v=1516979161 1512w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1728x.png?v=1516979161 1728w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1944x.png?v=1516979161 1944w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_2048x.png?v=1516979161 2048w" sizes="50px" srcset="//cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_120x.png?v=1516979161 120w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_180x.png?v=1516979161 180w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_360x.png?v=1516979161 360w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_540x.png?v=1516979161 540w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_720x.png?v=1516979161 720w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_900x.png?v=1516979161 900w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1080x.png?v=1516979161 1080w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1296x.png?v=1516979161 1296w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1512x.png?v=1516979161 1512w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1728x.png?v=1516979161 1728w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_1944x.png?v=1516979161 1944w, //cdn.shopify.com/s/files/1/2445/4459/files/Modern-logo-square_7268e30c-939e-40a2-9ce7-11bc64094c40_2048x.png?v=1516979161 2048w">
+                  </a>
+                </div>
+              
+            
+              </div>
+            
+          </div>
+        </div>
+        <div class="grid--full medium-down--hide">
+          <div class="grid__item">
+            
+<nav>
+  <ul class="site-nav" id="AccessibleNav">
+    
+      
+        <li>
+          <a href="/" class="site-nav__link" data-meganav-type="child">
+              Home
+          </a>
+        </li>
+      
+    
+      
+      
+        <li class="site-nav--has-dropdown " aria-haspopup="true">
+          <a href="/collections/all" class="site-nav__link" data-meganav-type="parent" aria-controls="MenuParent-2" aria-expanded="false">
+              Shop
+              <span class="icon icon-arrow-down" aria-hidden="true"></span>
+          </a>
+          <ul id="MenuParent-2" class="site-nav__dropdown site-nav--has-grandchildren" data-meganav-dropdown="">
+            
+              
+                <li>
+                  <a href="/collections/all" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                      All products
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/collections/accessories" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                      Accessories
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/collections/pots-planters" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                      Pots &amp; planters
+                  </a>
+                </li>
+              
+            
+              
+              
+                <li class="site-nav--has-dropdown site-nav--has-dropdown-grandchild " aria-haspopup="true">
+                  <a href="/collections/lighting" class="site-nav__link" aria-controls="MenuChildren-2-4" data-meganav-type="parent" tabindex="-1">
+                      Lighting
+                      <span class="icon icon-arrow-down" aria-hidden="true"></span>
+                  </a>
+                  <ul id="MenuChildren-2-4" class="site-nav__dropdown-grandchild" data-meganav-dropdown="">
+                    
+                      <li>
+                        <a href="/collections/light-bulbs" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                            Light bulbs
+                          </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/collections/lighting" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                            Lamps
+                          </a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/collections/pillows" class="site-nav__link" data-meganav-type="child" tabindex="-1">
+                      Pillows
+                  </a>
+                </li>
+              
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li class="site-nav--active">
+          <a href="/blogs/news" class="site-nav__link" data-meganav-type="child" aria-current="page">
+              Journal
+          </a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+          </div>
+        </div>
+      
+
+    </div>
+  </header>
+</div>
+
+
+
+</div>
+
+  <main class="wrapper main-content" role="main">
+    <div class="grid">
+        <div class="grid__item">
+          
+
+<div id="shopify-section-blog-template" class="shopify-section">
+
+<div class="grid">
+
+  <div class="grid__item post-large--four-fifths">
+
+    <div class="grid">
+      <div class="grid__item post-large--ten-twelfths">
+
+        
+        <header class="section-header">
+          <h1 class="section-header__title h3">
+            
+              News
+            
+          </h1>
+        </header>
+
+        
+
+          <h2><a href="/blogs/news/pillows">About our pillows</a></h2>
+          <p class="blog-date">
+            <time datetime="2018-11-23T11:44:00Z">November 23, 2018</time>
+            
+            
+          </p>
+
+          
+          <div class="rte">
+            
+              
+              
+<style>
+  
+
+  #ArticleImage-blog-template--5738627107 {
+    max-width: 845px;
+    max-height: 344.94107142857143px;
+  }
+  #ArticleImageWrapper-blog-template--5738627107 {
+    max-width: 845px;
+  }
+</style>
+
+              <p>
+                </p><div id="ArticleImageWrapper-blog-template--5738627107" class="article__image-wrapper supports-js">
+                  <div style="padding-top:40.82142857142858%;">
+                    <img id="ArticleImage-blog-template--5738627107" class="article__image lazyautosizes lazyloaded" src="//cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_300x300.jpg?v=1542991461" data-widths="[90, 120, 150, 180, 360, 480, 600, 750, 940, 1080, 1296]" data-aspectratio="2.4496937882764653" data-sizes="auto" alt="About our pillows" data-srcset="//cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_90x.jpg?v=1542991461 90w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_120x.jpg?v=1542991461 120w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_150x.jpg?v=1542991461 150w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_180x.jpg?v=1542991461 180w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_360x.jpg?v=1542991461 360w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_480x.jpg?v=1542991461 480w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_600x.jpg?v=1542991461 600w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_750x.jpg?v=1542991461 750w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_940x.jpg?v=1542991461 940w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_1080x.jpg?v=1542991461 1080w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_1296x.jpg?v=1542991461 1296w" sizes="637px" srcset="//cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_90x.jpg?v=1542991461 90w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_120x.jpg?v=1542991461 120w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_150x.jpg?v=1542991461 150w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_180x.jpg?v=1542991461 180w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_360x.jpg?v=1542991461 360w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_480x.jpg?v=1542991461 480w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_600x.jpg?v=1542991461 600w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_750x.jpg?v=1542991461 750w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_940x.jpg?v=1542991461 940w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_1080x.jpg?v=1542991461 1080w, //cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_1296x.jpg?v=1542991461 1296w">
+                  </div>
+                </div>
+              <p></p>
+
+              <noscript>
+                <p><a href="/blogs/news/pillows" title=""><img src="//cdn.shopify.com/s/files/1/2445/4459/articles/Cover-article-pillows_1024x1024.jpg?v=1542991461" alt="About our pillows" class="article__image" /></a></p>
+              </noscript>
+            
+            
+              <p>&nbsp; What better way to transform an entire room decor than with throw pillows? A nicely chosen set of decorative cushions can bring a pop of color and have a big decorative impact at a relatively low cost. Onixx is proud to create exclusive patterns to let you get inspired, whether you like your home decor to be modern and minimalist, or vibrant and colorful. Our pillowcases are printed and&nbsp;stitched with great&nbsp;care in the US. They are made from specially spinned polyester threads, retain their shape, doesn't wrinkle so no ironing is required. The pillow insert is made from recycled...</p>
+            
+          </div>
+
+          <p><a href="/blogs/news/pillows">Read more →</a></p>
+
+          
+
+        
+
+        
+      </div>
+    </div>
+  </div>
+
+  <aside class="sidebar grid__item post-large--one-fifth">
+    <h3 class="h4">Recent Articles</h3>
+
+  <p>
+    <a href="/blogs/news/pillows">About our pillows</a>
+    <br>
+    <time pubdate="" datetime="2018-11-23T11:44:00Z">
+      <em class="text-light">November 23, 2018</em>
+    </time>
+  </p>
+
+
+
+
+  </aside>
+
+</div>
+
+
+
+
+
+
+</div>
+
+        </div>
+    </div>
+  </main>
+
+  <div id="shopify-section-footer" class="shopify-section"><footer class="site-footer small--text-center" role="contentinfo">
+
+<div class="wrapper">
+
+  <div class="grid-uniform">
+
+    
+
+    
+
+    
+      
+          <div class="grid__item post-large--one-quarter medium--one-half">
+            <h3 class="h4">Your interior design</h3>
+            <div class="rte"><p>Make your decor stand out with exclusive handmade&nbsp;<a href="/collections/pillows" title="https://minimal-modern.myshopify.com/collections/pillows">pillows</a>, and curated products and accessories.</p></div>
+          </div>
+
+        
+    
+      
+          <div class="grid__item post-large--one-quarter medium--one-half">
+            
+            <h3 class="h4">Links</h3>
+            
+            <ul class="site-footer__links">
+              
+                <li><a href="/search">Search</a></li>
+              
+                <li><a href="/pages/contact-us">Contact us</a></li>
+              
+                <li><a href="/blogs/news">Journal</a></li>
+              
+                <li><a href="/pages/return-policy">Return policy</a></li>
+              
+            </ul>
+          </div>
+
+        
+    
+      
+          <div class="grid__item post-large--one-quarter medium--one-half">
+            <h3 class="h4">Follow Us</h3>
+              
+              <ul class="inline-list social-icons">
+  
+    <li>
+      <a class="icon-fallback-text" href="https://twitter.com/shopify" title="minimal-modern on Twitter">
+        <span class="icon icon-twitter" aria-hidden="true"></span>
+        <span class="fallback-text">Twitter</span>
+      </a>
+    </li>
+  
+  
+    <li>
+      <a class="icon-fallback-text" href="https://www.facebook.com/shopify" title="minimal-modern on Facebook">
+        <span class="icon icon-facebook" aria-hidden="true"></span>
+        <span class="fallback-text">Facebook</span>
+      </a>
+    </li>
+  
+  
+    <li>
+      <a class="icon-fallback-text" href="https://www.pinterest.com/shopify" title="minimal-modern on Pinterest">
+        <span class="icon icon-pinterest" aria-hidden="true"></span>
+        <span class="fallback-text">Pinterest</span>
+      </a>
+    </li>
+  
+  
+  
+    <li>
+      <a class="icon-fallback-text" href="https://instagram.com/shopify" title="minimal-modern on Instagram">
+        <span class="icon icon-instagram" aria-hidden="true"></span>
+        <span class="fallback-text">Instagram</span>
+      </a>
+    </li>
+  
+  
+    <li>
+      <a class="icon-fallback-text" href="https://snapchat.com/add/shopify" title="minimal-modern on Snapchat">
+        <span class="icon icon-snapchat" aria-hidden="true"></span>
+        <span class="fallback-text">Snapchat</span>
+      </a>
+    </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+          </div>
+
+        
+    
+      
+          <div class="grid__item post-large--one-quarter medium--one-half">
+            <h3 class="h4">Newsletter</h3>
+            
+              <p>Sign up for the latest news, offers and styles</p>
+            
+            <div class="form-vertical small--hide">
+  <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+    
+    
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field" aria-label="Your email" autocorrect="off" autocapitalize="off">
+      <input type="submit" class="btn" name="subscribe" id="subscribe" value="Subscribe">
+    
+  </form>
+</div>
+<div class="form-vertical post-large--hide large--hide medium--hide">
+  <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+    
+    
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="input-group">
+        <input type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field" aria-label="Your email" autocorrect="off" autocapitalize="off">
+        <span class="input-group-btn">
+          <button type="submit" class="btn" name="commit" id="subscribe">Subscribe</button>
+        </span>
+      </div>
+    
+  </form>
+</div>
+
+          </div>
+
+      
+    
+  </div>
+
+  <hr class="hr--small hr--clear">
+
+  <div class="grid">
+    <div class="grid__item text-center">
+      <p class="site-footer__links">Copyright © 2020, <a href="/" title="">minimal-modern</a>. <a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></p>
+    </div>
+  </div>
+
+  
+    
+    <div class="grid">
+      <div class="grid__item text-center">
+        <span class="visually-hidden">Payment icons</span>
+        <ul class="inline-list payment-icons">
+          
+            <li>
+              <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+            </li>
+          
+            <li>
+              <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
+            </li>
+          
+            <li>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg>
+
+            </li>
+          
+            <li>
+              <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path></svg>
+            </li>
+          
+            <li>
+              <svg class="icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-diners_club"><title id="pi-diners_club">Diners Club</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path></svg>
+            </li>
+          
+            <li>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-discover"><title id="pi-discover">Discover</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path><path d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z" fill="#EDA024"></path><path fill="#494949" d="M9 11h20v2H9z"></path><path d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z" fill="#EDA024"></path></svg>
+
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+  
+</div>
+
+</footer>
+
+
+
+
+</div>
+
+
+  <ul hidden="">
+    <li id="a11y-refresh-page-message">choosing a selection results in a full page refresh</li>
+  </ul>
+
+  <script src="//cdn.shopify.com/s/files/1/2445/4459/t/8/assets/theme.js?v=14750184192293829152" type="text/javascript"></script>
+
+
+{% endblock %}

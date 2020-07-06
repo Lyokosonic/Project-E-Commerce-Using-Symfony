@@ -1,0 +1,20 @@
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+
+cart:
+    path: /cart
+    controller: App\Controller\HomeController::cart
+
+collections:
+    path: /collections
+    controller: App\Controller\HomeController::collections
+
+collections/all:
+    path: /collections/all
+    controller: App\Controller\HomeController::all
+
+journal:
+    path: /blogs/news
+    controller: App\Controller\HomeController::journal
+
